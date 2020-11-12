@@ -6,10 +6,10 @@ import controllers.BBddControllers;
 
 /**
  * Clase NumerosAleatorios
+ * 
  * @author jonatan.delafuente
  *
  */
-
 
 public class NumerosAleatorios extends Thread {
 
@@ -20,14 +20,15 @@ public class NumerosAleatorios extends Thread {
 	private Semaphore semaforo;
 
 	/**
-	 *Constructor de la Clase NumerosAleatorios 
+	 * Constructor de la Clase NumerosAleatorios
+	 * 
 	 * @param rangoInicial
 	 * @param rangoFinal
 	 * @param numHilos
 	 * @param numRegistros
 	 * @param semaforo
 	 */
-	
+
 	public NumerosAleatorios(int rangoInicial, int rangoFinal, int numHilos, int numRegistros, Semaphore semaforo) {
 		this.rangoFinal = rangoFinal;
 		this.rangoInicial = rangoInicial;
@@ -37,9 +38,10 @@ public class NumerosAleatorios extends Thread {
 	}
 
 	/**
-	 * Lógica del hilo, genera un número y un email aleatorio y los inserta en una BBDD mySQL
+	 * Lógica del hilo, genera un número y un email aleatorio y los inserta en una
+	 * BBDD mySQL
 	 */
-	
+
 	@Override
 	public void run() {
 		BBddControllers controladorBBDD = new BBddControllers();
