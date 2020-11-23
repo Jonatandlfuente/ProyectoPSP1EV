@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"controllers","l":"BBddControllers"},{"p":"views","l":"Formulario"},{"p":"controllers","l":"Main"},{"p":"models","l":"NumerosAleatorios"}]

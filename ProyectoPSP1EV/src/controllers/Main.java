@@ -41,7 +41,7 @@ public class Main {
 			/*
 			 * Repartirmos la carga de trabajo entre los hilos, si el cociente entre
 			 * registros e hilos no es exacto, para los restos vuelven a ejecutarse
-			 * empezando por el hilo 0 hasta que el resto sea 0
+			 * empezando por el primer hilo hasta que el resto sea 0
 			 */
 			if (resto != 0) {
 				rangoFinal = ((numRegistros / numHilos) * (i)) + cont + 1;
