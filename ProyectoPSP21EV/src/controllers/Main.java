@@ -47,11 +47,14 @@ public class Main {
 			case "2":
 				disparador.leerConVariosHilos();
 				break;
+			case "0":
+				System.out.println("Fin del programa");
+				break;
 			default:
 				System.out.println("Introduce una opcion válida!!\n");
 			}
 
-		} while (opcion != "0");
+		} while (!opcion.equalsIgnoreCase("0"));
 	}
 
 	/**
@@ -92,11 +95,11 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * Método que lee los registros de una tabla de una BBDD mySQL y te muestra el
-	 * total de registros y el total de tiempo que tardan varios hilos en ejecutar la
-	 * consulta
+	 * total de registros y el total de tiempo que tardan varios hilos en ejecutar
+	 * la consulta
 	 */
 
 	public void leerConVariosHilos() {

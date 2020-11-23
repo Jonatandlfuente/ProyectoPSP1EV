@@ -77,12 +77,14 @@ public class Hilos extends Thread {
 			semaforo.acquire(1);
 			for (int i = rangoInicial; i < rangoFinal; i++) {
 				try {
-					
+
 					// Iniciamos el dato del reloj
 					tiempoInicial = System.currentTimeMillis();
-					Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/bbdd_psp_1", "DAM2020_PSP","DAM2020_PSP");
+					Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/bbdd_psp_1",
+							"DAM2020_PSP", "DAM2020_PSP");
 					Statement consulta = conexion.createStatement();
-					ResultSet registro = consulta.executeQuery("select INGRESOS from empleados where ID=" + arrayIds.get(i));
+					ResultSet registro = consulta
+							.executeQuery("select INGRESOS from empleados where ID=" + arrayIds.get(i));
 					if (registro.next()) {
 						int num = registro.getInt("INGRESOS");
 						acumulativoIngresos = acumulativoIngresos + num;
@@ -92,7 +94,7 @@ public class Hilos extends Thread {
 						tiempoTotal = tiempoTotal + tiempoEstimado;
 					}
 					conexion.close();
-					
+
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
