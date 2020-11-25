@@ -51,7 +51,7 @@ public class NumerosAleatorios extends Thread {
 			Random r = new Random();
 			aleatorio = r.nextInt(991) + 10;
 			email = controladorBBDD.emailAleatoirio() + "@gmail.com";
-			controladorBBDD.escribirBbdd(email, aleatorio);
+			controladorBBDD.escribirBbddEmailSalario(email, aleatorio);
 		}
 	}
 }

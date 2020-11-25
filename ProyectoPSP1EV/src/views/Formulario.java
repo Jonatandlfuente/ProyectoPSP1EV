@@ -18,7 +18,7 @@ public class Formulario {
 	 * @return opcion
 	 */
 
-	public int nuevoFormulario() {
+	public int nuevoFormularioHilos() {
 		Scanner teclado = new Scanner(System.in);
 		int opcion = 0;
 		String opcionS = "";
@@ -44,7 +44,7 @@ public class Formulario {
 	 * @return opcion
 	 */
 
-	public int nuevoFormularioAleatorios() {
+	public int nuevoFormularioRegistros() {
 
 		Scanner teclado = new Scanner(System.in);
 		int opcion = 0;

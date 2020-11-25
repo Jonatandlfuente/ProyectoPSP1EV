@@ -23,9 +23,9 @@ public class Main {
 		int rangoInicial = 0;
 		int rangoFinal = 0;
 		int totalRegistros = 0;
-		numHilos = miFormulario.nuevoFormulario();
+		numHilos = miFormulario.nuevoFormularioHilos();
 		Semaphore semaforo = new Semaphore(1);
-		int numRegistros = miFormulario.nuevoFormularioAleatorios();
+		int numRegistros = miFormulario.nuevoFormularioRegistros();
 		BBddControllers controladorBBDD = new BBddControllers();
 		NumerosAleatorios numbers;
 		int resto = numRegistros % numHilos;

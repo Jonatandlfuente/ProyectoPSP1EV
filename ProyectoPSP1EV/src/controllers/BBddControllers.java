@@ -80,7 +80,7 @@ public class BBddControllers {
 	 * @param aleatorio
 	 */
 
-	public void escribirBbdd(String email, int aleatorio) {
+	public void escribirBbddEmailSalario(String email, int aleatorio) {
 
 		try {
 			Connection conexion = conexionBbdd();
