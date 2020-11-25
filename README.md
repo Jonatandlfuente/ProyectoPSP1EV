@@ -8,9 +8,18 @@ Tenemos 2 proyectos dentro del repositorio:
 
 2. En el segundo llamado **ProyectoPSP21EV** se trata de una aplicación en la que el usuario podra elegir entre hacer una lectura secuencial de los registros de una bbdd o una lectura de 5 hilos concurrentes. El programa hará una suma total del campo ingresos, sumando de forma secuencial cada registro de ingresos de la bbdd y lo mostrará por consola. Del mismo modo calculará el tiempo de ejecución de la operación en cada caso mostrándola del mismo modo.
 
+Los parámetros estarán contenidos en un archivo properties dentro de cada proyecto
+
 ## REQUISITOS
 
-Los jar dentro de los proyectos están compilados con una JDK javaSe-v1.8, el ide utilizado para realizar el proyecto es eclipse
++ Los jar dentro de los proyectos están compilados con una JDK javaSe-v1.8, el ide utilizado para realizar el proyecto es eclipse
++ Se deberá tener creada una bbdd mySQL cuyos parámetros de conexión en un servidor local serán:
+
+servidor=jdbc:mysql://localhost/bbdd_psp_1
+user=DAM2020_PSP
+pass=DAM2020_PSP
+
++ La bbdd deberá contener la tabla empleados y deberá estar compuesta por un campo ID de tipo int autoincremental, un campo EMAIL de tipo varchar(100) y un campo INGRESOS int
 
 ## PASOS PARA CLONAR EL PROYECTO
 
