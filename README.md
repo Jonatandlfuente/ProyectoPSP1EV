@@ -14,11 +14,9 @@ Los parámetros estarán contenidos en un archivo properties dentro de cada proy
 
 + Los jar dentro de los proyectos están compilados con una JDK javaSe-v1.8, el ide utilizado para realizar el proyecto es eclipse
 + Se deberá tener creada una bbdd mySQL cuyos parámetros de conexión en un servidor local serán:
-
-servidor=jdbc:mysql://localhost/bbdd_psp_1
-user=DAM2020_PSP
-pass=DAM2020_PSP
-
+  + servidor=jdbc:mysql://localhost/bbdd_psp_1
+  + user=DAM2020_PSP
+  + pass=DAM2020_PSP
 + La bbdd deberá contener la tabla empleados y deberá estar compuesta por un campo ID de tipo int autoincremental, un campo EMAIL de tipo varchar(100) y un campo INGRESOS int
 
 ## PASOS PARA CLONAR EL PROYECTO
@@ -36,7 +34,7 @@ Con eso clonará el repositorio en una carpeta local
 
 1. Si ejecutamos desde un ide:
 
-   1.  Para ejecutar cada uno de los proyectos se deberá ejecutar la clase ** Main ** que se encuentra en el paquete controllers en cada proyecto. Si se utiliza un gestor de dependencias se necesitará el archivo **MySQL Connector/J** que se podrá descargar en el enlace (https://mvnrepository.com/artifact/mysql/mysql-connector-java.) O bien, si no usamos un gestor de dependencias, el archivo se encontrará físicamente en la carpeta ** lib ** de cada uno de los proyectos. 
+   1.  Para ejecutar cada uno de los proyectos se deberá ejecutar la clase **Main** que se encuentra en el paquete controllers en cada proyecto. Si se utiliza un gestor de dependencias se necesitará el archivo **MySQL Connector/J** que se podrá descargar en el enlace (https://mvnrepository.com/artifact/mysql/mysql-connector-java.) O bien, si no usamos un gestor de dependencias, el archivo se encontrará físicamente en la carpeta **lib** de cada uno de los proyectos. 
 
    2. Bastaría con enlazarlo. En el caso de Eclipse, nos iríamos al proyecto, botón derecho Properties -> Java build path, ahí seleccionamos el conector que tenemos y pulsamos remove para eliminarlo. Para insertarlo en la ruta correcta pulsamos Add External JARs.. y dentro de la carpeta lib seleccionamos el archivo conector, para enlazar el ide con la bbdd mySql.
 
