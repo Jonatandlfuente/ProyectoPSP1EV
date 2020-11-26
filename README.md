@@ -8,7 +8,7 @@ Tenemos 2 proyectos dentro del repositorio:
 
 2. En el segundo llamado **ProyectoPSP21EV** se trata de una aplicación en la que el usuario podra elegir entre hacer una lectura secuencial de los registros de una bbdd o una lectura de 5 hilos concurrentes. El programa hará una suma total del campo ingresos, sumando de forma secuencial cada registro de ingresos de la bbdd y lo mostrará por consola. Del mismo modo calculará el tiempo de ejecución de la operación en cada caso mostrándola del mismo modo.
 
-Los parámetros estarán contenidos en un archivo properties dentro de cada proyecto
+Los parámetros de conexión estarán contenidos en un archivo properties dentro de cada proyecto
 
 ## REQUISITOS
 
