@@ -2,9 +2,7 @@
 
 ## DESCRIPCIÓN
 
-Tenemos 2 proyectos dentro del repositorio:
-
-En el primero llamado **ProyectoPSP1EV** se trata de una aplicación que pedirá al usuario el número de registros a insertar en una bbdd y el número de hilos con los que queremos ejecutar la aplicación. La carga de trabajo se repartirá entre todos los hilos de forma equitativa y mostrará por consola el nombre de el hilo ejecutor así como los valores de email y salario insertados en la bbdd. Estos valores se generarán de forma aleatoria para cada registro siendo el valor del salario un número comprandido entre 10 y 1000.
+**ProyectoPSP1EV** se trata de una aplicación que pedirá al usuario el número de registros a insertar en una bbdd y el número de hilos con los que queremos ejecutar la aplicación. La carga de trabajo se repartirá entre todos los hilos de forma equitativa y mostrará por consola el nombre de el hilo ejecutor así como los valores de email y salario insertados en la bbdd. Estos valores se generarán de forma aleatoria para cada registro siendo el valor del salario un número comprandido entre 10 y 1000.
 
 Los parámetros de conexión estarán contenidos en un archivo properties dentro de cada proyecto
 
